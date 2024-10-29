@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia Quiz</title>
-    <script src="script.js" defer></script> <!-- Carga el archivo JavaScript diferido -->
-    <link rel="stylesheet" href="estilos.css"> <!-- Carga el archivo CSS con los estilos -->
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <!-- Encabezado principal de la página -->
     <header>
         <h1>Trivia Quiz</h1>
         <p>Desafía tus conocimientos en diferentes temas con preguntas de trivia 9999% IMPOSIBLE.</p>
         <button id="visit-api" onclick="window.open('https://opentdb.com', '_blank')">Visitar Open Trivia DB</button>
     </header>
 
-    <!-- Contenedor principal del juego -->
     <main id="quiz-container">
-        <div id="question" class="question-container"></div> <!-- Área para la pregunta actual -->
-        <div id="options" class="options-container"></div> <!-- Área para las opciones de respuesta -->
-        <button id="next-button" onclick="loadNextQuestion()">Siguiente</button> <!-- Botón para avanzar a la siguiente pregunta -->
+        <div id="question" class="question-container"></div>
+        <div id="options" class="options-container"></div>
+        <button id="next-button" onclick="loadNextQuestion()">Siguiente</button>
     </main>
 
-    <!-- Pie de página -->
     <footer>
         <p>Trivia Quiz - Desarrollado con la API de <a href="https://opentdb.com" target="_blank">Open Trivia Database</a></p>
     </footer>
